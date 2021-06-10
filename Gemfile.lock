@@ -2,11 +2,13 @@ PATH
   remote: .
   specs:
     bank-data (0.1.0)
+      watir
 
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
+    childprocess (3.0.0)
     diff-lcs (1.4.4)
     parallel (1.20.1)
     parser (3.0.1.1)
@@ -40,7 +42,14 @@ GEM
     rubocop-ast (1.7.0)
       parser (>= 3.0.1.1)
     ruby-progressbar (1.11.0)
+    rubyzip (2.3.0)
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
     unicode-display_width (2.0.0)
+    watir (6.19.1)
+      regexp_parser (>= 1.2, < 3)
+      selenium-webdriver (>= 3.142.7)
 
 PLATFORMS
   ruby
@@ -52,4 +61,4 @@ DEPENDENCIES
   rubocop (~> 1.7)
 
 BUNDLED WITH
-   2.1.4
+   2.2.19
