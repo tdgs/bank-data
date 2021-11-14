@@ -1,4 +1,4 @@
-require 'watir'
+require "watir"
 
 module BankData
   module AlphaBank
@@ -24,9 +24,9 @@ module BankData
         sleep 2
         browser.text_field(id: "dateFrom").set("01/05/2021")
         browser.text_field(id: "dateTo").set("31/05/2021")
-        browser.link(:"data-ng-click" => "vm.getStatementsWithFilter()").click
-        browser.div(:"data-document-type" => "CSV").links.first.click
-        browser.link(:"data-ng-click" => "logout()").click
+        browser.link("data-ng-click": "vm.getStatementsWithFilter()").click
+        browser.div("data-document-type": "CSV").links.first.click
+        browser.link("data-ng-click": "logout()").click
       end
     end
   end

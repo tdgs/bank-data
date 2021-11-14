@@ -11,8 +11,6 @@ require "bank_data"
 # require "pry"
 # Pry.start
 
-
-
 username = ENV["ALPHA_BANK_USERNAME"]
 password = ENV["ALPHA_BANK_PASSWORD"]
 
